@@ -1,0 +1,139 @@
+/** 
+ * @name Sakura-Сraft
+ * @version 2.2
+ * @description A mix of Minecraft and cherry blossoms
+ * @author muhamedlabs and PatrykBielanin
+ *
+ * @website https://muhamedlabs.pro
+ * @source https://github.com/PatrykBielanin/discord-cyberpunk2077-theme
+ * @donate https://www.donationalerts.com/r/andremuhamad
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sofia+Sans:wght@300;400;500;700&display=swap');
+ @import url('https://patrykbielanin.github.io/discord-cyberpunk2077-theme/base.css');
+ 
+ /* 🌸 Переменные */
+ :root {
+    --app-background-image: url('https://i.ibb.co/G32jxwGz/Sakura.png'); /* URL вашего фонового изображения */
+    --sakura-pink: 255, 182, 193;
+    --sakura-accent: 216, 95, 138;
+    --primary-text-color: #eeeeee;
+    --font-primary: 'Sofia Sans', sans-serif;
+    --font-header: 'Press Start 2P', cursive;
+ 
+    --primary: 30, 15, 25;
+    --red: var(--sakura-accent);
+    --blue: 200, 220, 255;
+    --yellow: 255, 240, 180;
+    --green: 180, 220, 180;
+    --dark-green: 140, 190, 160;
+ 
+    --avatar-circle: 0;
+    --avatar-rounded: 5px;
+    --avatar-border: 1px solid rgba(var(--sakura-pink), 0.6);
+ }
+ 
+ /* 🌸 Фон с фиксированным изображением */
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Отключаем прокрутку */
+ }
+ 
+ html::before {
+    content: "";
+    position: fixed; /* Фиксируем фон */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--app-background-image) center center / cover no-repeat; /* Закрепление и масштабирование фона */
+    opacity: 1; /* Без прозрачности */
+    pointer-events: none; /* Фон не мешает взаимодействию с элементами */
+    z-index: -1; /* Фон будет под всеми другими элементами */
+ }
+ 
+ /* ✍️ Шрифт */
+ body, html, * {
+    font-family: var(--font-primary) !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: var(--primary-text-color) !important;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+ }
+ 
+ h1, h2, h3, h4, .title-31SJ6t {
+    font-family: var(--font-header) !important;
+    font-size: 10.8px !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(var(--sakura-pink), 0.9);
+ }
+ 
+ p, span, li, .button-1YPJmX {
+    font-family: var(--font-primary) !important;
+    font-size: 15px !important;
+    color: var(--primary-text-color) !important;
+ }
+ 
+ /* Прозрачность и blur для интерфейса */
+ .appMount_fae9dd,
+ .bg-1QIAus,
+ .theme-dark,
+ .theme-light {
+    background: transparent !important;
+ }
+ 
+ .container-2cd8Mz,
+ .container-1eFtFS,
+ .base-2jDfDU,
+ .sidebar-1tnWFu,
+ .content-1jQy2l,
+ .contentRegion-3HkfJJ {
+    background: none !important; /* Убираем фон */
+    backdrop-filter: none; /* Убираем эффект размытия */
+ }
+ 
+ .header-2Kx1US,
+ .title-31SJ6t {
+    background: none !important; /* Убираем фон */
+    border-bottom: none;
+    backdrop-filter: none; /* Убираем эффект размытия */
+ }
+ 
+ /* Кнопки */
+ .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background: rgba(var(--sakura-pink), 0.85) !important;
+    color: black !important;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px !important;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+ }
+ 
+ .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background: rgba(var(--sakura-accent), 0.85) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(var(--sakura-pink), 0.4);
+ }
+ 
+ /* Скроллбар */
+ ::-webkit-scrollbar-thumb {
+    background: rgba(var(--sakura-pink), 0.4);
+    border-radius: 4px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Текст при выделении */
+ ::selection {
+    background: rgba(var(--sakura-pink), 0.3);
+    color: black;
+ }
+ 
